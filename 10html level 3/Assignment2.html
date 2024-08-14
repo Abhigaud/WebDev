@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment |HTML Level 3| Q2</title>
+</head>
+<body>
+    <form action="/server">
+        <label for="username">Name:</label>
+        <input
+        type="text" 
+        id="username"
+        name="username"
+        placeholder="Enter Your Name">
+        <div>
+            Sex:
+            <input type="radio" id="male" name="sex">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            Country:
+            <select name="country" id="usercountry">
+                <option >Select an optionb</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="America">America</option>
+                <option value="China">China</option>
+            </select>
+        </div>
+        <div>
+            Message:
+            <br>
+            <textarea name="Message" id="Message" rows="5" cols="20"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe?</label>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
