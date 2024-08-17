@@ -2,3 +2,122 @@
 *{
     font-family: "Courier New";
 }
+
+/* Elemet Selector */
+h3{
+    background-color: antiquewhite !important;
+}
+h1{
+    color : #b92b27;
+}
+
+/* ID Selector */
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+/* Class selector */
+.upvote{
+    background-color: green;
+}
+
+/* Descendent Selector */
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+nav a{
+    color: hotpink;
+}
+
+/* Adjecent Sibling Combinator */
+p +h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+/* Child Cominator */
+ div > input{
+    background-color: darksalmon;
+ }
+
+ /* Attribute selector */
+input[type="text"]{
+    color: green;
+}
+input[type="password"]{
+    color: red;
+}
+
+input[type]{
+    color: ghostwhite;
+}
+
+/* Pseudo Class */
+/* 
+:hover
+:active
+:checked
+:nth-of-type()
+ */
+
+ button:hover{
+    background-color: black;
+    color: white;
+ }
+
+ button:active{
+    background-color: hotpink;
+    color: black;
+ }
+
+ p:active{
+    font-weight: bold;
+    color: green;
+ }
+
+input[type ="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+.post:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+
+/* Pseudo Element */
+h1::first-letter{
+    color: green;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection{
+    background-color: rgb(199, 192, 58);
+}
+
+/* Cascading & specificity */
+h3{
+    background-color: green;
+}
+
+/* -------Important */
+
+
+
+/* Practice ques */
+#myId p{
+    color: green;
+}
