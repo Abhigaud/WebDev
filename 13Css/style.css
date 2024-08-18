@@ -38,4 +38,7 @@ button{
     padding: 10px 20px 30px 40px;
 }
 
-
+/* Margin */
+div{
+    margin-bottom: 25px;
+}
