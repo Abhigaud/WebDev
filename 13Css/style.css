@@ -1,9 +1,19 @@
 /* Height and Width */
-
 div{
     height: 200px;
     width: 500px;
+    background-color: pink;
 }
 
-
-
+/* Border */
+div{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-top-color: blueviolet ;
+    border-top-style: dashed ;
+}
+h1{
+    border: 2px dotted green;
+    border-left: 8px solid red;
+}
