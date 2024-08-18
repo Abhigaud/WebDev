@@ -17,3 +17,10 @@ h1{
     border: 2px dotted green;
     border-left: 8px solid red;
 }
+
+/* Border radius */
+div{
+    /* border-radius: 20px ; */
+    border-radius: 20px 100px;
+    
+}
