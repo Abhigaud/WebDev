@@ -22,5 +22,20 @@ h1{
 div{
     /* border-radius: 20px ; */
     border-radius: 20px 100px;
-    
 }
+
+/* Padding */
+div{
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button{
+    border: 2px solid black;
+    /* padding-left: 12px;
+    padding-right: 12px; */
+    padding: 10px 20px 30px 40px;
+}
+
+
