@@ -17,4 +17,12 @@
     transform: translate(200px , 200px) rotate(90deg);
 }
 
-/*  */
+/* question 3  */
+#box3{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transform: skewX(20deg);
+}
+
+
