@@ -1,0 +1,10 @@
+/* Question 1 */
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: 2s ease-in 0.5s;
+}
+#box1:hover{
+    width: 600px;
+}
