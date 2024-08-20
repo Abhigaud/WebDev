@@ -32,3 +32,13 @@
     background-color: lightgreen;
     box-shadow: 2px 2px 5px green;
 }
+
+/* question 5 */
+#myPic{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    background-image: url(../photo/p.jpg);
+    background-size: cover ;
+    opacity: 50%;
+}
