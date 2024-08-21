@@ -36,7 +36,15 @@
         }
 
         #orange{
-            align-self: flex-end;
+            /* align-self: flex-end; */
+            /* flex-basis: 300px; */
+            /* flex-grow: 1; */
+        }
+
+        #blue{
+            /* flex-grow: 3; */
+            /* max-width: 200px; */
+            flex-shrink: 2;
         }
         h1{
             text-align: center;
@@ -55,7 +63,7 @@
     <div class="container">
         <div style="background-color: violet;">violet</div>
         <div style="background-color: indigo;">indigo</div>
-        <div style="background-color: blue;">blue</div>
+        <div id="blue" style="background-color: blue;">blue</div>
         <div style="background-color: green;">green</div>
         <div style="background-color: yellow;">yellow</div>
         <div id="orange" style="background-color: orange;">orange</div>
