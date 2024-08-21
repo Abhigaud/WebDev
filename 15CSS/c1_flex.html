@@ -26,7 +26,7 @@
 
             /* flex-wrap: nowrap; */
             /* flex-wrap: wrap-reverse; */
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
 
             /* align-items: flex-end; */
             /* align-items: flex-start; */
@@ -35,6 +35,9 @@
             align-content: center;
         }
 
+        #orange{
+            align-self: flex-end;
+        }
         h1{
             text-align: center;
         }
@@ -55,8 +58,8 @@
         <div style="background-color: blue;">blue</div>
         <div style="background-color: green;">green</div>
         <div style="background-color: yellow;">yellow</div>
-        <div style="background-color: orange;">orange</div>
-        <div style="background-color: red;">red</div>
+        <div id="orange" style="background-color: orange;">orange</div>
+        <div  style="background-color: red;">red</div>
         
     </div>
 </body>
