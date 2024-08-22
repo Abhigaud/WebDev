@@ -1,0 +1,21 @@
+.container{
+    height: 400px;
+    width: 400px;
+    background-color: azure;
+    border: 2px solid rgb(24, 142, 24);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container div {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 5px;
+}
