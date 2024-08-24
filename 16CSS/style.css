@@ -3,6 +3,7 @@
     height: 300px;
     background-color: black;
     display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px ;
 }
 
 .item{
@@ -14,5 +15,5 @@
 }
 
 h{
-    
+
 }
