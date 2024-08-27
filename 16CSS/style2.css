@@ -12,10 +12,12 @@
 }
 
 .box{
-    animation: fontAnimation;
+    /* animation: fontAnimation;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-delay: 0;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse; */
+
+    animation: fontAnimation 3s ease-in 0 infinite alternate-reverse normal;
 }
