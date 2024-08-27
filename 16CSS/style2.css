@@ -20,5 +20,6 @@
     animation-direction: alternate-reverse; */
 
     animation: fontAnimation 3s ease-in 0 infinite alternate-reverse normal;
-    /* animation */
+
+        
 }
