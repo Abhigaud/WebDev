@@ -2,6 +2,19 @@
     height: 100px;
     width: 300px;
     background-color: pink;
+    
+    /* animation: fontAnimation; */
+    /* animation: colorAnimate; */
+    /* animation: widthAnimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    
+    /* animation: widthAnimate 3s ease-in 0s infinite normal; */
+
+
 }
 
 @keyframes fontAnimation {
@@ -11,14 +24,28 @@
     }
 }
 
-.box{
-    /* animation: fontAnimation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; */
 
-    animation: fontAnimation 3s ease-in 0 infinite alternate-reverse normal;
-    /* animation */
+@keyframes colorAnimate {
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
 }
+
+@keyframes widthAnimate {
+    from{width: 10px;}
+    to{width: 400px;}
+}
+
+@keyframes colAnimate {
+    0%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+
