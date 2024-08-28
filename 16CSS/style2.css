@@ -25,7 +25,7 @@
 }
 
 
-<<<<<<< HEAD
+
 @keyframes colorAnimate {
     from{
         background-color: green;
@@ -61,9 +61,8 @@
 }
 
 
-=======
-    animation: fontAnimation 3s ease-in 0 infinite alternate-reverse normal;
+
+    /* animation: fontAnimation 3s ease-in 0 infinite alternate-reverse normal; */
 
         
-}
->>>>>>> e23c488326ed20fa600ac68cd5e85b9fd484fcf8
+
