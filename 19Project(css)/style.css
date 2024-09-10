@@ -16,10 +16,11 @@ body{
 }
 
 .sidebar{
-    /* background-color: #121212;  */
-    background-color: green; 
+    background-color: black; 
+    /* background-color: green;  */
     width: 340px;
     border-radius: 1rem;
+    margin-right: 0.5rem;
     
 }
 
@@ -104,3 +105,30 @@ a{
     opacity: 1;
 }
 
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 .5rem;
+    padding: 1rem 1.25rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.box-p2{
+    font-size: .85rem;
+    opacity: .85;
+    font-weight: 300;
+    margin: .6rem 0 .6rem 0;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: .25rem 1rem;
+    font-weight: 700;
+    margin-top: .5rem;
+    height: 2rem;
+    width: fit-content;
+}
