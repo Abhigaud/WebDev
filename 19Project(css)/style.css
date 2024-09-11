@@ -219,7 +219,39 @@ a{
 }
 .album{
     width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+.album-pic{
+    border-radius: .5rem;
+    margin-left: 1rem;
+    margin-right: 1.2rem;
+    height: 80%;
+}
+.song-name{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.song-name:hover{
+    text-decoration: underline;
+}
+.song-details{
+    opacity: .7;
+    font-size: 1rem;
+}
+.song-details:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.song-add{
+    margin-left: 1.5rem;
+    opacity: .7;
+}
+.song-add:hover{
+    opacity: 1;
+}
+
 .player{
     width: 50%;
 }
@@ -266,3 +298,4 @@ a{
     border-radius: 50%;
     margin-top: -5px;
 }
+
