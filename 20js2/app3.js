@@ -15,3 +15,12 @@ console.log(a++);
 
 // b = a;
 // console.log(b);
+
+
+// Comparison operator
+let age = 18;
+console.log(age<18);
+console.log(age>18);
+console.log(age>=18);
+console.log(age==18);
+console.log(age!=18);
