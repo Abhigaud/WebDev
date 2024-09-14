@@ -13,3 +13,8 @@ console.log(str.slice(5));
 console.log(str.slice(-5));
 console.log(str.slice(5,7));
 
+// ------- replace
+console.log(str.replace("Love","hate"));
+
+// ------- repeat
+console.log(str.repeat(5));
