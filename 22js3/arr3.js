@@ -6,3 +6,7 @@ console.log(primary.indexOf("Blue"));
 
 console.log(primary.includes("audi"));
 console.log(primary.includes("yellow"));
+
+let secondary = ["orange", "green", "violet"];
+console.log(primary.concat(secondary));
+
