@@ -19,3 +19,10 @@ console.log(colors.slice(2));
 console.log(colors.slice(2,4));
 console.log(colors.slice(-2));
 
+// Splice--------
+console.log("--------splice");
+console.log(colors.splice(4));
+console.log(colors.splice(0,1));
+console.log(colors.splice(0,0,"black","grey"));
+console.log(colors);
+
