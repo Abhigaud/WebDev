@@ -26,3 +26,8 @@ console.log(colors.splice(0,1));
 console.log(colors.splice(0,0,"black","grey"));
 console.log(colors);
 
+console.log("--------sort");
+console.log(colors.sort());
+
+let Marks = [99, 89, 67, 42, 100];
+console.log(Marks.sort());
