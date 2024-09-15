@@ -8,5 +8,8 @@ console.log(primary.includes("audi"));
 console.log(primary.includes("yellow"));
 
 let secondary = ["orange", "green", "violet"];
-console.log(primary.concat(secondary));
+let allCol = primary.concat(secondary);
+console.log(allCol);
 
+secondary.reverse();
+console.log(secondary);
