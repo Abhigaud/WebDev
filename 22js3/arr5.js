@@ -10,3 +10,8 @@ console.log(arrCopy);
 arrCopy.pop();
 console.log(arr);
 console.log(arrCopy);
+
+const arr1 = ['a', 'b', 'c', 'd']
+arr1.push('d');
+arr1.push('d');
+console.log(arr1);
