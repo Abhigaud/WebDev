@@ -14,3 +14,4 @@ const classInfo = {
 }
 
 console.log(classInfo);
+console.log(classInfo.shradha.grade);
