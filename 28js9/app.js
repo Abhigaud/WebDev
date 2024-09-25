@@ -19,12 +19,30 @@
 // console.dir(document.querySelectorAll("p"));
 
 
-// --------------------------
+
+
 let heading = document.querySelector("h1");
-console.log(heading.style);
-heading.style.color = 'purple'; 
-
-
 // --------------------------
 console.log(heading);
 heading.innerHTML = `<u>${heading.innerText}</u>`
+
+// getter & setter --------------------------
+let img = document.querySelector('img');
+console.log(img);
+console.log(img.getAttribute('id'));
+// img.setAttribute('id', 'spiderman');
+
+//  manipulating style --------------------------
+console.log(heading.style);
+heading.style.color = 'purple'; 
+heading.style.backgroundColor = "blue";
+
+// --------------------------
+let links = document.querySelectorAll(".box a");
+for (const link of links) {
+    link.style.color = 'red';
+}
+
+// for (let i = 0; i < links.length; i++) {
+//     links[i].style.color = "green"
+// }
