@@ -15,5 +15,16 @@
 
 
 // query selector-----------------------------
-console.dir(document.querySelectorAll("div a"));
-console.dir(document.querySelectorAll("p"));
+// console.dir(document.querySelectorAll("div a"));
+// console.dir(document.querySelectorAll("p"));
+
+
+// --------------------------
+let heading = document.querySelector("h1");
+console.log(heading.style);
+heading.style.color = 'purple'; 
+
+
+// --------------------------
+console.log(heading);
+heading.innerHTML = `<u>${heading.innerText}</u>`
