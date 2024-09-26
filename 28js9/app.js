@@ -33,9 +33,9 @@ console.log(img.getAttribute('id'));
 // img.setAttribute('id', 'spiderman');
 
 //  manipulating style --------------------------
-console.log(heading.style);
-heading.style.color = 'purple'; 
-heading.style.backgroundColor = "blue";
+// console.log(heading.style);
+// heading.style.color = 'purple'; 
+// heading.style.backgroundColor = "blue";
 
 // --------------------------
 let links = document.querySelectorAll(".box a");
@@ -44,5 +44,20 @@ for (const link of links) {
 }
 
 // for (let i = 0; i < links.length; i++) {
-//     links[i].style.color = "green"
+    //     links[i].style.color = "green"
 // }
+
+
+// --------------------------
+console.log(heading.classList);
+heading.classList.add('green');
+heading.classList.add('blue');
+console.log(heading.classList);
+heading.classList.remove('green');
+console.log(heading.classList);
+console.log(heading.classList.contains('green'));
+console.log(heading.classList.contains('blue'));
+heading.classList.toggle("green");
+console.log(heading.classList);
+heading.classList.toggle("green");
+console.log(heading.classList);
