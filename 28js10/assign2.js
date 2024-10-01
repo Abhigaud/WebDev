@@ -19,3 +19,9 @@ nameInput.addEventListener('input', () => {
     nameDisplay.textContent = inputValue.replace(/[^a-zA-Z ]/g, '');
   }
 });
+
+
+
+
+
+
