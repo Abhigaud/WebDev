@@ -80,3 +80,5 @@ function reset() {
     userSeq  = [];
     level = 0;    
 }
+
+// simon says game 
