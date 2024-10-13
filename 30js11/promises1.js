@@ -47,14 +47,87 @@
 //----------optimise with promise 
 
 function saveToDb(data) {
-    return new Promise((success, failure)=> {
+    return new Promise((resolve, reject)=> {
         let internetSpeech = Math.ceil(Math.random()*10);
         if (internetSpeech > 4) {
-            success("success : data was saved");
+            resolve("success : data was saved");
         } else {
-            failure("failure : weak connection"); 
+            reject("failure : weak connection"); 
         }
     });
 }
 
 // saveToDb("apna college");
+
+// -------------------------------- then() & catch()
+
+// saveToDb("apna sapna").then(()=>{
+//     console.log("promise was resolved");
+// })
+// .catch(()=>{
+//     console.log("promise was rejected");
+    
+// });
+    
+    
+    
+    
+// // -------------------------------- promise chaining -  -- - - - - - - -   
+
+// saveToDb("apna sapna").then(()=>{
+//     console.log("data1 saved");
+//     saveToDb("helloworld").then(()=>{
+//         console.log("data2 saved");
+        
+//     });
+// })
+// .catch(()=>{
+//     console.log("promise was rejected");
+    
+// });
+
+
+// -------------------------------- promise chaining -  -- - - - - - - -   improved version
+
+// saveToDb("apna sapna")
+// .then(()=>{
+//     console.log("data1 saved");
+//     return saveToDb("helloworld");
+// })
+// .then(()=>{
+//     console.log("data2 saved");
+//     return saveToDb("shradha");
+// })
+// .then(()=>{
+//     console.log("data3 saved");
+// })
+// .catch(()=>{
+//     console.log("promise was rejected");
+    
+// });
+
+
+// -------------------------------- result & error in promise
+
+
+saveToDb("apna sapna")
+.then((result)=>{
+    console.log("data1 saved");
+    console.log("result of promise: ", result);
+    return saveToDb("helloworld");
+})
+.then((result)=>{
+    console.log("data2 saved");
+    console.log("result of promise: ", result);
+    return saveToDb("shradha");
+})
+.then((result)=>{
+    console.log("data3 saved");
+    console.log("result of promise: ", result);
+})
+.catch((error)=>{
+    console.log("promise was rejected");
+    console.log("error of promise: ", error);
+    
+});
+
