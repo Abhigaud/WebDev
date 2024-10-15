@@ -1,0 +1,12 @@
+{
+  "name": "a4script",
+  "version": "1.0.0",
+  "main": "a4export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Gaud",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
