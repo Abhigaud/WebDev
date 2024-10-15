@@ -1,0 +1,12 @@
+print ("welcome \r to python")
+print ("welcome \\ to python")
+print ("welcome \' to \' python")
+print ("welcome \" to \" python")
+print ("\a welcome  to  python")
+print ("\r welcome  to  python")
+print ("\t  welcome  to  python")
+print (" welcome \n to  python")
+print (" welcome\b to  python")
+print (" welcome \f to  python")
+
+const = int(123)
