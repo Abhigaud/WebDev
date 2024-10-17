@@ -67,4 +67,4 @@ app.get("/search", (req, res) => {
         res.send(`<h1> Nothing Searched </h1>`);
     }
     res.send(`<h1>Search results for query: ${q}</h1>`);
-}) ;
+});
