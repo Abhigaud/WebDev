@@ -5,7 +5,7 @@ const path = require("path");
 const port = 8080;
 
 // -----using EJS----------------
-// app.set("view engine", "ejs");
+app.set("view engine", "ejs");
 app.set("views", path.join(__dirname,"/views"))
 
 app.get("/", (req, res)=>{
