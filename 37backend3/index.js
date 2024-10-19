@@ -18,6 +18,12 @@ app.get("/hello", (req, res)=>{
     
 });
 
+app.get("/rolldice", (req, res)=>{
+    // res.send("hello");
+    let diceVal = Math.ceil(Math.random()*6);
+    res.render("rolldice.ejs", {num:diceVal});
+});
+
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
     
