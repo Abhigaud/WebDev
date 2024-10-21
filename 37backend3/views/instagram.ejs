@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram</title>
+        <link rel="stylesheet" href="/style.css">
+    <!-- <style>
+        img{
+            height: 300px;
+            
+        }
+    </style> -->
 </head>
 <body>
-    <h2>This page belongs to @<%= username %> </h2>
+    <h2>This page belongs to @ <%= data.name %> </h2>
     <button>Follow</button>
     <button>Message</button>
 
-    <h3>Accounts that follow you: </h3>
-    <ul>
-        <% for (let name of followers) { %>
-            <li> <%=name %> </li>
-        <% } %>
-    </ul>
+    <p>Followers : <%= data.followers%></p>
+    <p>Followers : <%= data.following%></p>
+
+    <hr>
+
+    <% for (let post of data.posts) {%>
+        <img src="<%= post.image%>" alt="some img">
+        <p>likes:<%= post.likes %></p>
+        <p>comments:<%= post.comments %></p>
+    <% } %>
+
+    <script src="/app.js"></script>
 </body>
 </html>
