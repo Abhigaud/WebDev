@@ -1,0 +1,12 @@
+.numpad{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.line{
+    height: 100px;
+    background-color: tan;
+    margin: 20px;
+}
