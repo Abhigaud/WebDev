@@ -5,6 +5,7 @@ const port = 8080;
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+
 app.get("/register",(req,res) => {
     let {user, password} = req.query;
     res.send(`standard GET response. Welcome ${user}!`);
