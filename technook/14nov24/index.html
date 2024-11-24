@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <source srcset="p.jpg" media="(max-width:320px)"/>
+        <source srcset="./cat1.jpg" media="(max-width:800px)"/>
+        <img src="./download (1).png" alt="">
+    </picture>
+    
+    <figure>
+        <img src="./women illustration.avif" alt="">
+        <figcaption>This is a caption for the image</figcaption>
+    </figure>
+
+    <template id="my-template">
+        <p>This content is inside the template tag.</p>
+    </template>
+
+    <form oninput="result.value = parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50"> +
+        <input type="number" id="b" value="25">
+        <output name="result" for="a b">75</output>
+
+    </form>
+
+    <details>
+        <summary>More info</summary>
+        <p>This is hidden until the user clicks "more info"</p>
+    </details>
+
+    <dialog id="myDialog">
+        <p>This is a dialog box</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+
+    <label for="birthday">Birthday</label>
+    <input type="date" id="birthday" name="birthday"/>
+
+    <label for="email">email</label>
+    <input type="email" id="email" name="email"/>
+    
+    <label for="volume">volume</label>
+    <input type="range" id="volume" name="volume"/>
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
+    </fieldset>
+
+    <table>
+        <caption>
+            Monthly Sales Data
+        </caption>
+        <tr>
+            <th>Month</th>
+            <th>sales</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$1000</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$1000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td>$1000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <ul>
+         <li>item 1</li>
+         <li>item 2</li>
+    </ul>
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext markup language</dd>
+        <dt>CSS</dt>
+        <dd>Casceding style sheet</dd>
+    </dl>
+</body>
+</html>

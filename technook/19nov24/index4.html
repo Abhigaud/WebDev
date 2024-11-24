@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normal flow layout</title>
+    <style>
+        .container{
+            position: relative;
+            border: 1px solid #000;
+            padding: 10px;
+            height: 200px;
+        }
+        .box{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: 1px solid #f00;
+            padding: 10px;
+            /* margin: 5px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 3</div>
+        <div class="box">box 3</div>
+    </div>
+</body>
+</html>

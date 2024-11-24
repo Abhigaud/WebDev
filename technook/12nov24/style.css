@@ -1,0 +1,23 @@
+body{
+    background-color: #f0f0f0; /* Light gray bgc*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #333;
+    text-align: center;
+}
+
+p{
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
