@@ -1,0 +1,2 @@
+// Variable
+let name = "Ayush";
