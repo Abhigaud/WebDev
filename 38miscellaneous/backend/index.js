@@ -13,7 +13,7 @@
 
  app.post("/register", (req, res) => {
     let {user, password} = req.body;
-    res.send(`standard GET response, welcome ${user}`);
+    res.send(`standard GET Response, welcome ${user}`);
  });
 
  app.listen(port, ()=>{
