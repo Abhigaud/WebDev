@@ -1,17 +1,1 @@
-.numpad{
-    display: flex;
-    flex-direction: column;
 
-
-}
-
-.line{
-    height: 100px;
-    background-color: tan;
-    margin: 20px;
-}
-.btn{
-    height: 100px;
-    width: 20px;
-    background-color: #fff;
-}
