@@ -12,3 +12,14 @@ let arrayAverage = (arr) => {
 }
 
 console.log(arrayAverage(arr));
+ 
+// -------------------------------------
+let isEven = (n) => {
+    if (n % 2 == 0) {
+        return "even";
+    }else{
+        return "not even";
+    }
+}
+
+console.log(isEven(6));
