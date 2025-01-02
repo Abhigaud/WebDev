@@ -1,20 +1,24 @@
 let btn = document.querySelector("button");
 let input = document.querySelector("input");
-
+let div = document.querySelector("div");
+let load = document.querySelector("#load");
 //// ------------- mouseout ------------------------------------
-// btn.addEventListener("mouseout" , function () {
-//     alert("mouseout");
-// });
+btn.addEventListener("mouseout" , function () {
+    console.log("mouseout");
+    
+});
 
 
 // // ------------- keypress -----------------------------------
-// input.addEventListener("keypress" , function () {
-//     alert("keypress");
-// });
+input.addEventListener("keypress" , function () {
+    console.log("keypress");
+});
 
 // // ------------- Scroll -----------------------------------
-function doSomething(scrollPos) {
-  alert("do something");
-}
+div.addEventListener("scroll", function(){
+  console.log("scrolled");
+});
 
-p.addEventListener("scroll", doSomething);
+window.addEventListener("load", function () {
+  load.textContent += "load\n";
+})
