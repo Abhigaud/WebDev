@@ -1,7 +1,7 @@
 let gameSeq = [];
 let userSeq = [];
 
-let btns = ["yellow", "red", "purple", "green"];
+let btns = ["yellow", "red", "green", "purple" ];
 
 let started = false;
 let level = 0;
@@ -36,7 +36,7 @@ function levelUp() {
     level++;
     h2.innerText = `level ${level}`;
 
-    let randIdx = Math.floor(Math.random() *3);
+    let randIdx = Math.floor(Math.random() *4);
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);

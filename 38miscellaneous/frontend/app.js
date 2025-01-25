@@ -76,10 +76,10 @@ let p1 = new Student("adam", 24, 67);
 let p2 = new Student("ahari", 29, 78); 
 
 class Teacher extends Person{
-    constructor(name, age, marks){
+    constructor(name, age, subject){
         console.log("student class constuctor");
         super(name, age);
-        this.subject = this.subject;
+        this.subject = subject;
     }
 }
 
