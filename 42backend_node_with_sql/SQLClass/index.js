@@ -9,11 +9,20 @@ const connection = mysql.createConnection({
 })
 
 // let q = "SHOW TABLES";
-let q = "INSERT INTO user (id, username, email, password) VALUES (?, ?, ?, ?) ";
-let user = ["123", "123_newuser", "abc@gmail.com", "abc"];
+
+// // insert NEW data
+// let q = "INSERT INTO user (id, username, email, password) VALUES (?, ?, ?, ?) ";
+// let user = ["123", "123_newuser", "abc@gmail.com", "abc"];
+
+// insert multiple data in the form of array
+let q = "INSERT INTO user (id, username, email, password) VALUES ?";
+let users = [
+    ["123b", "123_newuserb", "abc@gmail.comb", "abcb"],
+    ["123c", "123_newuserc", "abc@gmail.comc", "abcc"]
+];
 
 try{
-    connection.query(q, user ,(err, result) => {
+    connection.query(q, [users] ,(err, result) => {
         if(err) throw err;
         console.log(result);
     });
