@@ -8,21 +8,41 @@ const connection = mysql.createConnection({
     password: "A6091401g",
 })
 
+let getRandomUser = () => {
+    return [
+      faker.string.uuid(),
+      faker.internet.username(), 
+      faker.internet.email(),
+      faker.internet.password()
+    ];
+}
+
 // let q = "SHOW TABLES";
 
+// --------------------------------------------------
 // // insert NEW data
 // let q = "INSERT INTO user (id, username, email, password) VALUES (?, ?, ?, ?) ";
 // let user = ["123", "123_newuser", "abc@gmail.com", "abc"];
 
-// insert multiple data in the form of array
+// --------------------------------------------------
+// // insert multiple data in the form of array
+// let q = "INSERT INTO user (id, username, email, password) VALUES ?";
+// let users = [
+    //     ["123b", "123_newuserb", "abc@gmail.comb", "abcb"],
+    //     ["123c", "123_newuserc", "abc@gmail.comc", "abcc"]
+    // ];
+    
+// --------------------------------------------------
+// insert bulk data with faker
 let q = "INSERT INTO user (id, username, email, password) VALUES ?";
-let users = [
-    ["123b", "123_newuserb", "abc@gmail.comb", "abcb"],
-    ["123c", "123_newuserc", "abc@gmail.comc", "abcc"]
-];
+let data = [];
+for (let i = 1; i <= 100; i++) {
+    data.push(getRandomUser());
+    
+}
 
 try{
-    connection.query(q, [users] ,(err, result) => {
+    connection.query(q, [data] ,(err, result) => {
         if(err) throw err;
         console.log(result);
     });
@@ -32,14 +52,6 @@ try{
 
 connection.end();
 
-let getRandomUser = () => {
-    return {
-      Id: faker.string.uuid(),
-      username: faker.internet.username(), 
-      email: faker.internet.email(),
-      password: faker.internet.password()
-    };
-  }
 
 //   console.log(getRandomUser());
 
