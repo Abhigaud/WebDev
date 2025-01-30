@@ -1,0 +1,64 @@
+<!-- # day 7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+    <style>
+  /* .container{ */
+    /* background-color: red; */
+    /* background-image: linear-gradient(160deg,red,pink,blue,orange);
+    text-align: center;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+  } */
+  /* h1{
+    position: relative;
+  } */
+   /* #a{grid-area: a1;}
+   #b{grid-area: b1;}
+   #c{grid-area: c1;}
+   #d{grid-area: d1;}
+   #e{grid-area: e1;} */
+
+   .container{
+    display: grid;
+    /* grid-template-areas: 'a1 b1 '
+    'c1 d1'
+    'e1 e1'; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    background-color: rgb(167, 182, 210);
+    padding: 20px;
+    margin:20px;
+    border: solid 0.5px;
+    /* box shadow */
+    box-shadow: 15px 15px 10px grey;
+    /* box-shadow: 0px 0px 90px 110px grey,
+    0px 0px 10px 20px red; */
+   }
+  .container > div{
+    background-color: white;
+    padding:20px;
+    margin:20px;
+    border: solid 0.5px;
+    border-radius: 30%;
+    box-shadow: 15px 15px 10px grey;
+   }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <div id="a">Home</div>
+       <div id="b">About</div>
+       <div id="c">Products</div>
+       <div id="d">Stories</div>
+       <div id="e">Events</div>
+    </div>
+</body>
+</html>
