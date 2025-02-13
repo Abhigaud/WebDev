@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan A Trip</title>
+    <!-- CSS -->
+     <link rel="stylesheet" href="./planATrip.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,900;1,300&display=swap" rel="stylesheet">
+
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<body>
+    <div class="container">
+        <section class="navbar">
+            <nav class="navbar-container">
+                <div class="navbar-logo">
+                    <img src="./assets/logo.png" alt="logo">
+                </div>
+                <div class="nav-list">
+                    <ul class="list">
+                        <li class="list-item"><a href="./index.html">Home</a></li>
+                        <li class="list-item"><a href="./topPlace.html">Top Places</a></li>
+                        <li class="list-item"><a href="./planATrip.html">Plan a Trip</a></li>
+                        <li class="list-item"><a href="./State.html">State wise</a></li>
+                        <li class="list-item"><a href="./help.html">Help</a></li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <div class="nav-search-input">
+                        <span class= "material-symbols-outlined">search</span>
+                        <input type="text" placeholder="Eg. Ayodhya">
+                    </div>
+                    <button class="navbar-btn">Search</button>
+                </div>
+            </nav>
+        </section>
+<!-- Main  -->
+<main>
+    <div class="form-container">
+        <h2>Plan Your Trip</h2>
+        <form action="#" method="post">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+            
+            <label for="travelers">Number of Travelers:</label>
+            <input type="number" id="travelers" name="travelers" min="1" required>
+            
+            <label for="preferences">Preferences:</label>
+            <select id="preferences" name="preferences">
+                <option value="adventure">Adventure</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="cultural">Cultural</option>
+                <option value="nature">Nature</option>
+            </select>
+            
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+<!-- Creating a footer section -->
+<footer>
+        
+    <img
+      src="./assets/logo.png"
+      alt="beatsLogo-footer"
+      class="footer-logo"
+    />
+
+    <!-- Creating a About India menu -->
+    <ul>
+      <li><a href="#">About India</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Key Facts</a></li>
+      <li><a href="#">Geography</a></li>
+      <li><a href="#">people & Languages</a></li>
+    </ul>
+
+    
+    <ul>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Updates</a></li>
+      <li><a href="#">Weather</a></li>
+    </ul>
+
+    <div class="footer-SocialMeadia">
+      <div class="footer-email-section">
+        <input type="email" placeholder="Email" />
+        <div class="email-subscription">
+          <img src="./Assets/rightArrow.png" alt="rightArrow" />
+          <p>Subscribe</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="./Assets/facebook.png" alt="facebook" />
+        <img src="./Assets/twitter.png" alt="twitter" />
+        <img src="./Assets/instagram.png" alt="instagram" />
+        <img src="./Assets/linkedin.png" alt="linkedin" />
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <link rel="stylesheet" href="./assign3.css">
+
+    <style>
+        .loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid goldenrod;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}   
+
+    /* ---------------------------------------------------------------- */
+    /* animation */
+    .box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    /* animation: fontAnimation; */
+    /* animation: colorAnimate; */
+    /* animation: widthAnimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    
+    animation: colAnimate 3s ease-in 0s infinite normal;
+
+
+}
+
+@keyframes fontAnimation {
+    from{font-size: 20px;}
+    to{
+        font-size: 40px;
+    }
+}
+
+
+
+@keyframes colorAnimate {
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes widthAnimate {
+    from{width: 10px;
+        background-color: green;
+    }
+    to{width: 400px;
+        background-color: blue;
+        border-radius: 50px;
+    }
+}
+
+@keyframes colAnimate {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: pink;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+
+
+    /* animation: fontAnimation 3s ease-in 0 infinite alternate-reverse normal; */
+    </style>
+</head>
+<body>
+    <h1>Loader</h1>
+    <div class="loader"></div>
+
+    <h1>Animation</h1>
+    <div class="box">This is a Box </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS part 6 | Assignment 1</title>
+    <link rel="stylesheet" href="./assignment1.css">
+    <style>
+    .container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* width: 1000px; */
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-gap: 10px;
+    }
+
+    .container div {
+    background-color: pink;
+    font-size: 1.5rem;
+
+        }
+
+        .header{
+        grid-column: 1 / span 12;
+        }
+    .sidebar{
+        grid-column: 1/ span 3;
+        grid-row: 2/ span 10;
+    }
+    .navigation{
+        grid-column: 4/ span 6;
+    }
+    .ads{
+        grid-column: 10/ span 3;
+        grid-row: 2/ span 10;
+    }
+    .main{
+    grid-column: 4/ span 6;
+    grid-row: 3/ span 9;
+    }
+    .footer{
+    grid-column: 1/ span 12;
+    }
+
+    /* media query */
+   
+
+    @media (max-width: 720px) {
+    
+    .container div {
+        background-color: pink;
+        font-size: 1.5rem;
+    }
+    
+    .header{
+        grid-column: 1/ span 12;
+    }
+    .navigation{
+        grid-column: 1/ span 12;
+    }
+    .sidebar{
+        grid-column: 1/ span 3;
+        grid-row: 3/ span 9;
+    }
+    .main{
+        grid-column: 4/ span 9;
+        grid-row: 3/ span 9;
+    }
+    .ads{
+        grid-column: 1/ span 3;
+    }
+    .footer{
+        grid-column: 4/ span 9;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> header &#40; 1row, 12column &#41; </div>
+        <div class="navigation"> Navigation &#40; 1row, 6column &#41; </div>
+        <div class="sidebar"> Sidebar &#40; 10row, 3column &#41; </div>
+        <div class="main"> main &#40; 9row, 6column &#41; </div>
+        <div class="ads"> ads &#40; 10row, 3column &#41; </div>
+        <div class="footer"> footer &#40; 1row, 12column &#41; </div>
+    </div>
+</body>
+</html>

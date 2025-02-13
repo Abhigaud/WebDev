@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places of India</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 24px;
+        }
+        header img{
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 30rem;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover{
+            color: #23234c;
+            /* background: #fff; */
+            /* padding: 10px; */
+        }
+
+        .search{
+            margin-left: 20rem;
+            font-size: 20px;
+            padding: 12px 30px;
+        }
+        .search:hover{
+            color: #333;
+            background: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <img src="./logo.png" alt="">
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Explore.html">Explore</a>
+        <a href="#random">Plan a Trip</a>
+        <a href="#random">Blogs</a>
+    </nav>
+    <nav class="search">
+        <span class="material-symbols-outlined">
+            search
+            </span>
+        search
+    </nav>
+    </header>
+    <div class="container">
+        <div class="card" id="tajmahal">
+            <h2>Taj Mahal, Agra</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzBD7JNaWq-NA6w-hrPIb7wvKEe_Lw8Ec1tQ&s" alt="Taj Mahal">
+            <p>The Taj Mahal is one of the most famous monuments in the world. Built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, it is a symbol of love.</p>
+        </div>
+        <div class="card" id="redfort">
+            <h2>Red Fort, Delhi</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7pGty-REVxjwQheQn2GR_h8bzfI_cCYENA&s" alt="Red Fort">
+            <p>The Red Fort is a historic fort in the city of Delhi. It served as the main residence of the Mughal Emperors for nearly 200 years.</p>
+        </div>
+        <div class="card" id="hampi">
+            <h2>Hampi, Karnataka</h2>
+            <img src="https://beyonder.travel/wp-content/uploads/2020/05/Stone-Chariot-Vittala-Temple-Hampi.jpg" alt="Hampi">
+            <p>Hampi is an ancient village known for its ruined temples and monuments from the Vijayanagara Empire.</p>
+        </div>
+        <div class="card" id="Ayodhya">
+            <h2>Ram Mandir, Ayodhya</h2>
+            <img src="https://etimg.etb2bimg.com/thumb/msid-107039323,width-1200,height-900,resizemode-4/.jpg" alt="Ram Mandir">
+            <p>The Ram Mandir, a Hindu temple under construction in Ayodhya, Uttar Pradesh, India, is dedicated to Lord Ram.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Historical Places of India | Designed by Abhishek
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
