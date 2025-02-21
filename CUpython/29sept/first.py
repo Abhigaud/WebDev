@@ -11,4 +11,4 @@ tiny = min("hello world")
 
 print(tiny)
 print(big)
-print("her")
+# print("her")
