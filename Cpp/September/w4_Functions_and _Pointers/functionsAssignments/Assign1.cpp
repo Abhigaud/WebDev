@@ -8,6 +8,7 @@ int firstNSquares(int n){
         cout<< square(i)<<endl;
     }
 } 
+
 int main(){
     firstNSquares(14);
 }
