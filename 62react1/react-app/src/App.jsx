@@ -22,6 +22,7 @@ function App() {
 
   return(
     <>
+    <h1>new Heading</h1>
     <ProductTab/>
     </>
   );
